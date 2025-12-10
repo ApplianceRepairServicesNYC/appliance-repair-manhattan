@@ -1,0 +1,46 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- White circular background -->
+  <circle cx="256" cy="256" r="256" fill="#ffffff"/>
+
+  <!-- Stylized W Logo -->
+  <g transform="translate(70,80) scale(1.05)">
+    <!-- Left curved W arm -->
+    <path d="M70 120 C70 40, 150 40, 150 120 L150 260 L110 260 L110 140 C110 120, 90 120, 70 120 Z"
+          fill="#0A2A68"/>
+
+    <!-- Middle wedge -->
+    <path d="M150 120 L200 260 L240 260 L190 120 Z" fill="#0A2A68"/>
+
+    <!-- Right wedge -->
+    <path d="M240 120 L290 260 L330 260 L280 120 Z" fill="#0A2A68"/>
+
+    <!-- Stars -->
+    <path d="M165 200 l8 24 -20 -15h24l-20 15z" fill="#ffffff"/>
+    <path d="M245 200 l8 24 -20 -15h24l-20 15z" fill="#ffffff"/>
+
+    <!-- Red stripes -->
+    <rect x="320" y="140" width="120" height="22" fill="#D62828"/>
+    <rect x="320" y="175" width="120" height="22" fill="#D62828"/>
+    <rect x="320" y="210" width="120" height="22" fill="#D62828"/>
+  </g>
+
+  <!-- Text: WESTCHESTER -->
+  <text x="50%" y="345" font-family="Arial, sans-serif" font-weight="700"
+        font-size="48" fill="#0A2A68" text-anchor="middle">
+    WESTCHESTER
+  </text>
+
+  <!-- Text: APPLIANCE REPAIR -->
+  <text x="50%" y="405" font-family="Arial, sans-serif" font-weight="700"
+        font-size="48" fill="#D62828" text-anchor="middle">
+    APPLIANCE REPAIR
+  </text>
+
+  <!-- Text: MOGULS -->
+  <text x="50%" y="465" font-family="Arial, sans-serif" font-weight="700"
+        font-size="48" fill="#0A2A68" text-anchor="middle">
+    MOGULS
+  </text>
+
+</svg>
