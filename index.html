@@ -6,36 +6,31 @@
     <title>Appliance Repair Services in Brooklyn, Queens and Manhattan | Appliance Repair Group</title>
     <meta name="description" content="Welcome to Appliance Repair Group, your trusted partner for expert appliance repair services. Experience prompt, reliable, and skilled solutions for all your appliance needs.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://appliance-repair-group.com/">
     
     <!-- Open Graph -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Home | Appliance Repair Group">
-    <meta property="og:description" content="Welcome to Appliance Repair Group, your trusted partner for expert appliance repair services. Experience prompt, reliable, and skilled solutions for all your appliance needs.">
+    <meta property="og:description" content="Welcome to Appliance Repair Group, your trusted partner for expert appliance repair services.">
     <meta property="og:url" content="https://appliance-repair-group.com/">
     <meta property="og:site_name" content="Appliance Repair Group">
-    <meta property="og:image" content="images/appliance-repair-group.svg">
-    <meta property="og:image:width" content="900">
-    <meta property="og:image:height" content="600">
+    <meta property="og:image" content="https://appliance-repair-group.com/wp-content/uploads/2024/04/appliance-repair-group.jpg">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Home | Appliance Repair Group">
     <meta name="twitter:description" content="Welcome to Appliance Repair Group, your trusted partner for expert appliance repair services.">
     
-    <!-- Favicon -->
-    <link rel="icon" href="images/icons/favicon.svg" sizes="32x32">
-    <link rel="apple-touch-icon" href="images/icons/favicon.svg">
-    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&family=Dancing+Script&display=swap" rel="stylesheet">
     
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-favicon.png" sizes="32x32">
     
-    <!-- Schema.org Markup -->
+    <!-- Schema.org -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -59,7 +54,7 @@
         },
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
             "opens": "07:00",
             "closes": "22:00"
         },
@@ -72,501 +67,1532 @@
         }
     }
     </script>
+
+    <style>
+        /* ========================================
+           CSS VARIABLES & RESET
+           ======================================== */
+        :root {
+            --primary: #d80027;
+            --secondary: #002472;
+            --text: #545454;
+            --heading: #0e0e0e;
+            --light-bg: #f7f7f7;
+            --white: #ffffff;
+            --font-main: 'Nunito Sans', sans-serif;
+            --font-alt: 'Dancing Script', cursive;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-main);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-main);
+            font-weight: 800;
+            color: var(--heading);
+            line-height: 1.3;
+            margin-bottom: 0.5em;
+        }
+
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 2rem; }
+        h3 { font-size: 1.5rem; }
+
+        p { margin-bottom: 1em; }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover { color: var(--secondary); }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        ul { list-style: none; }
+
+        .container {
+            max-width: 1630px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        /* ========================================
+           BUTTONS
+           ======================================== */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            background: #b8001f;
+            border-color: #b8001f;
+            color: var(--white);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-white {
+            background: var(--white);
+            color: var(--secondary);
+            border-color: var(--white);
+        }
+
+        .btn-white:hover {
+            background: #f0f0f0;
+            color: var(--secondary);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        /* ========================================
+           HEADER
+           ======================================== */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .top-bar {
+            background: var(--light-bg);
+            padding: 10px 0;
+            font-size: 0.8rem;
+        }
+
+        .top-bar-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .top-bar-left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .top-bar-left img {
+            width: 24px;
+            height: auto;
+        }
+
+        .top-bar-nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .top-bar-nav a {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .top-bar-nav a:hover {
+            color: var(--primary);
+        }
+
+        .top-bar-phone {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--heading);
+            font-weight: 700;
+        }
+
+        .top-bar-phone img {
+            width: 20px;
+        }
+
+        .header-main {
+            padding: 15px 0;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            max-height: 70px;
+            width: auto;
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .main-nav a {
+            color: var(--heading);
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .main-nav a:hover {
+            color: var(--primary);
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--white);
+            min-width: 200px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            border-radius: 5px;
+            padding: 10px 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+
+        .nav-item:hover .nav-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .nav-dropdown a {
+            display: block;
+            padding: 8px 20px;
+            font-size: 0.8rem;
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--heading);
+        }
+
+        /* ========================================
+           HERO SECTION
+           ======================================== */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(15, 43, 51, 0.7), rgba(15, 43, 51, 0.7)),
+                        url('https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-appliance-repair-man-in-overalls-repairs-a-refrigerator-focusing-on-its-inner-components-with-a-set-of-tools.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 80px 0;
+            max-width: 600px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--white);
+            padding: 8px 15px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            color: var(--white);
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 strong {
+            color: var(--white);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero .btn-outline {
+            color: var(--white);
+            border-color: var(--white);
+        }
+
+        .hero .btn-outline:hover {
+            background: var(--white);
+            color: var(--secondary);
+        }
+
+        .hero-flag {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: auto;
+            opacity: 0.8;
+        }
+
+        /* ========================================
+           TRUST BADGES
+           ======================================== */
+        .trust-badges {
+            padding: 30px 0 60px;
+        }
+
+        .badges-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .badge-item {
+            padding: 15px;
+        }
+
+        .badge-item img {
+            height: 52px;
+            width: auto;
+        }
+
+        /* ========================================
+           ABOUT SECTION
+           ======================================== */
+        .about-section {
+            padding: 60px 0 100px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .image-decor {
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            width: 120px;
+            z-index: -1;
+        }
+
+        .about-content h2 {
+            margin-bottom: 20px;
+        }
+
+        .about-content ul {
+            margin: 20px 0 30px;
+        }
+
+        .about-content li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .about-content li::before {
+            content: "★";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+
+        /* ========================================
+           SERVICES SECTION
+           ======================================== */
+        .services-section {
+            padding: 60px 0 100px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-card a {
+            display: block;
+            color: inherit;
+        }
+
+        .service-card img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+
+        .service-card h3 {
+            padding: 20px;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        /* ========================================
+           NYC SECTION
+           ======================================== */
+        .nyc-section {
+            padding: 60px 0 100px;
+        }
+
+        .nyc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .nyc-content ul {
+            margin: 20px 0 30px;
+        }
+
+        .nyc-content li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 10px;
+        }
+
+        .nyc-content li::before {
+            content: "★";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+
+        /* ========================================
+           CTA BANNER
+           ======================================== */
+        .cta-banner {
+            background: var(--secondary);
+            color: var(--white);
+            padding: 40px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-stars.png');
+            opacity: 0.3;
+        }
+
+        .cta-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .cta-icon {
+            width: 50px;
+            flex-shrink: 0;
+        }
+
+        .cta-icon img {
+            width: 100%;
+            filter: brightness(0) invert(1);
+        }
+
+        .cta-banner h2 {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        /* ========================================
+           BRANDS SECTION
+           ======================================== */
+        .brands-section {
+            background: var(--light-bg);
+            padding: 100px 0 80px;
+        }
+
+        .brands-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .brand-item {
+            padding: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .brand-item:hover {
+            transform: scale(1.05);
+        }
+
+        .brand-item img {
+            height: 50px;
+            width: auto;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        .brand-item:hover img {
+            filter: grayscale(0%);
+        }
+
+        /* ========================================
+           REVIEWS SECTION
+           ======================================== */
+        .reviews-section {
+            padding: 60px 0;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .review-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .review-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .review-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #ddd;
+        }
+
+        .review-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .review-info h4 {
+            font-size: 1rem;
+            margin-bottom: 2px;
+        }
+
+        .review-date {
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        .review-stars {
+            color: #ffc107;
+            margin-bottom: 15px;
+        }
+
+        .review-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* ========================================
+           CONTACT FORM SECTION
+           ======================================== */
+        .contact-section {
+            background: var(--light-bg);
+            padding: 80px 0 120px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 0;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        /* ========================================
+           MAP SECTION
+           ======================================== */
+        .map-section {
+            position: relative;
+        }
+
+        .map-section iframe {
+            width: 100%;
+            height: 550px;
+            border: 0;
+        }
+
+        .map-cta {
+            background: var(--secondary);
+            color: var(--white);
+            padding: 60px 0;
+            position: relative;
+        }
+
+        .map-cta::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 36, 114, 0.85), rgba(0, 36, 114, 0.85)),
+                        url('https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-young-repairman-in-protective-workwear-fixing-oven.jpg');
+            background-size: cover;
+            background-position: right center;
+        }
+
+        .map-cta-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+        }
+
+        .map-cta h2 {
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+
+        .map-cta p {
+            opacity: 0.8;
+            margin-bottom: 25px;
+        }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .footer {
+            background: var(--light-bg);
+            padding: 50px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 2fr 1.5fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo img {
+            max-height: 60px;
+            margin-bottom: 20px;
+        }
+
+        .footer-nav-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .footer-nav a {
+            display: block;
+            color: var(--text);
+            padding: 5px 0;
+            font-size: 0.9rem;
+        }
+
+        .footer-nav a:hover {
+            color: var(--primary);
+        }
+
+        .footer-divider {
+            height: 1px;
+            background: #ddd;
+            margin: 30px 0;
+        }
+
+        .footer-info {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .footer-info-item {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .footer-info-icon {
+            width: 50px;
+            flex-shrink: 0;
+        }
+
+        .footer-info-icon img {
+            width: 100%;
+        }
+
+        .footer-info-text span {
+            display: block;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .footer-info-text strong {
+            display: block;
+            color: var(--heading);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        /* ========================================
+           MOBILE MENU
+           ======================================== */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 300px;
+            height: 100vh;
+            background: var(--white);
+            z-index: 2000;
+            transition: left 0.3s ease;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .mobile-menu.active {
+            left: 0;
+        }
+
+        .mobile-menu-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .mobile-menu-nav {
+            margin-top: 50px;
+        }
+
+        .mobile-menu-nav a {
+            display: block;
+            padding: 12px 0;
+            color: var(--heading);
+            border-bottom: 1px solid #eee;
+            font-weight: 600;
+        }
+
+        .mobile-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* ========================================
+           MOBILE STICKY BUTTONS
+           ======================================== */
+        .mobile-sticky {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+        }
+
+        .mobile-sticky-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .mobile-sticky a {
+            display: block;
+            text-align: center;
+            padding: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        .mobile-sticky a:first-child {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .mobile-sticky a:last-child {
+            background: var(--secondary);
+            color: var(--white);
+        }
+
+        /* ========================================
+           BACK TO TOP
+           ======================================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 45px;
+            height: 45px;
+            background: var(--white);
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 998;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        /* ========================================
+           RESPONSIVE STYLES
+           ======================================== */
+        @media (max-width: 1200px) {
+            .main-nav {
+                gap: 15px;
+            }
+            .main-nav a {
+                font-size: 0.7rem;
+            }
+        }
+
+        @media (max-width: 991px) {
+            body { font-size: 18px; }
+            
+            .top-bar-nav,
+            .main-nav {
+                display: none;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .mobile-sticky {
+                display: block;
+            }
+            
+            .about-grid,
+            .nyc-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .footer-nav-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-info {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .cta-inner {
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .cta-content {
+                flex-direction: column;
+            }
+            
+            .hero-flag {
+                display: none;
+            }
+            
+            .back-to-top {
+                bottom: 80px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+            
+            .hero-content {
+                padding: 60px 0;
+                text-align: center;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .btn-group {
+                justify-content: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-info {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-info-item {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .badges-grid {
+                gap: 20px;
+            }
+            
+            .badge-item img {
+                height: 40px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="header-wrapper">
-            <!-- Top Bar -->
-            <div class="header-top">
-                <div class="container">
-                    <div class="left-content">
-                        <img src="images/icons/usa-flag.svg" alt="USA Flag" width="24" height="16">
+    <header class="header" id="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-inner">
+                    <div class="top-bar-left">
+                        <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-usa-flag.svg" alt="USA">
                         <span>We service the Brooklyn, Queens and Manhattan Areas</span>
                     </div>
-                    <nav>
-                        <ul class="nav">
-                            <li class="active"><a href="index">Home</a></li>
-                            <li><a href="about">About Us</a></li>
-                            <li><a href="brands-we-repair">Brands We Repair</a></li>
-                            <li><a href="service-areas">Service Areas</a></li>
-                            <li><a href="gallery">Gallery</a></li>
-                            <li><a href="warranty">Warranty</a></li>
-                            <li><a href="contact-us">Contact</a></li>
-                            <li class="phone-link">
-                                <a href="tel:6464535353">
-                                    <img src="images/icons/phone.svg" alt="Phone" width="16" height="16">
-                                    <strong>(646) 453-5353</strong>
-                                </a>
-                            </li>
-                        </ul>
+                    <nav class="top-bar-nav">
+                        <a href="#home">Home</a>
+                        <a href="#about">About Us</a>
+                        <a href="#brands">Brands We Repair</a>
+                        <a href="#services">Service Areas</a>
+                        <a href="#reviews">Gallery</a>
+                        <a href="#contact">Warranty</a>
+                        <a href="#contact">Contact</a>
+                        <a href="tel:6464535353" class="top-bar-phone">
+                            <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-phone.svg" alt="Phone">
+                            <strong>(646) 453-5353</strong>
+                        </a>
                     </nav>
                 </div>
             </div>
-            
-            <!-- Main Header -->
-            <div class="header-main">
-                <div class="container">
-                    <a href="index" class="logo">
-                        <img src="images/logo.svg" alt="Appliance Repair Group" width="221" height="57">
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-inner">
+                    <a href="#home" class="logo">
+                        <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-logo.svg" alt="Appliance Repair Group">
                     </a>
-                    
-                    <nav>
-                        <ul class="nav nav-main">
-                            <li><a href="dishwasher-repair">Dishwasher Repair</a></li>
-                            <li><a href="washer-repair">Washer Repair</a></li>
-                            <li><a href="dryer-repair">Dryer Repair</a></li>
-                            <li><a href="stove-repair">Stove Repair</a></li>
-                            <li>
-                                <a href="oven-repair">Oven Repair</a>
-                                <ul class="dropdown">
-                                    <li><a href="range-repair">Range Repair</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="refrigerator-repair">Refrigerator Repair</a>
-                                <ul class="dropdown">
-                                    <li><a href="freezer-repair">Freezer Repair</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="book-online" class="button primary is-small">Book Now</a>
-                            </li>
-                        </ul>
+                    <nav class="main-nav">
+                        <a href="#services">Dishwasher Repair</a>
+                        <a href="#services">Washer Repair</a>
+                        <a href="#services">Dryer Repair</a>
+                        <a href="#services">Stove Repair</a>
+                        <div class="nav-item">
+                            <a href="#services">Oven Repair ▾</a>
+                            <div class="nav-dropdown">
+                                <a href="#services">Range Repair</a>
+                            </div>
+                        </div>
+                        <div class="nav-item">
+                            <a href="#services">Refrigerator Repair ▾</a>
+                            <div class="nav-dropdown">
+                                <a href="#services">Freezer Repair</a>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-primary">Book Now</a>
                     </nav>
-                    
-                    <button class="mobile-menu-toggle" aria-label="Menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                    <button class="mobile-toggle" onclick="toggleMobileMenu()">☰</button>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main id="main">
-        <!-- Hero Section -->
-        <section class="hero-section" style="background-image: url('images/backgrounds/hero-bg.svg');">
-            <div class="container">
-                <div class="hero-content">
-                    <span class="badge">Call Now for Fast, Reliable Service!</span>
-                    <h1><strong>Keep Your Appliances Running</strong> with Appliance Repair Group</h1>
-                    <p>Fast, reliable appliance repair services in Brooklyn, Queens and Manhattan. Call now for expert assistance!</p>
-                    <div class="button-group">
-                        <a href="book-online" class="button primary">Book Now</a>
-                        <a href="service-areas" class="button is-outline">View Our Service Areas</a>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-flag">
-                <img src="images/usa-flag-vertical.svg" alt="USA Flag">
-            </div>
-        </section>
+    <!-- Mobile Menu -->
+    <div class="mobile-overlay" id="mobileOverlay" onclick="toggleMobileMenu()"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" onclick="toggleMobileMenu()">✕</button>
+        <nav class="mobile-menu-nav">
+            <a href="#services">Refrigerator Repair</a>
+            <a href="#services">Oven Repair</a>
+            <a href="#services">Stove Repair</a>
+            <a href="#services">Dryer Repair</a>
+            <a href="#services">Washer Repair</a>
+            <a href="#services">Dishwasher Repair</a>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#brands">Brands We Repair</a>
+            <a href="#services">Service Areas</a>
+            <a href="#reviews">Gallery</a>
+            <a href="#contact">Warranty</a>
+            <a href="#contact">Contact</a>
+            <a href="tel:6464535353" class="top-bar-phone">
+                <strong>(646) 453-5353</strong>
+            </a>
+            <a href="#contact" class="btn btn-primary" style="margin-top: 20px;">Book Now</a>
+        </nav>
+    </div>
 
-        <!-- Trust Badges -->
-        <section class="trust-badges">
-            <div class="container">
-                <div class="row align-center">
-                    <div class="trust-badge">
-                        <img src="images/icons/google-badge.svg" alt="Google Reviews" height="52">
-                    </div>
-                    <div class="trust-badge">
-                        <img src="images/icons/yelp-badge.svg" alt="Yelp Reviews" height="52">
-                    </div>
-                    <div class="trust-badge">
-                        <img src="images/icons/trustpilot-badge.svg" alt="Trustpilot Reviews" height="52">
-                    </div>
-                    <div class="trust-badge">
-                        <img src="images/icons/facebook-badge.svg" alt="Facebook Reviews" height="52">
-                    </div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">Call Now for Fast, Reliable Service!</span>
+                <h1><strong>Keep Your Appliances Running</strong> with <strong>Appliance Repair Group</strong></h1>
+                <p>Fast, reliable appliance repair services in Brooklyn, Queens and Manhattan. Call now for expert assistance!</p>
+                <div class="btn-group">
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                    <a href="#services" class="btn btn-outline">View Our Service Areas</a>
                 </div>
             </div>
-        </section>
+        </div>
+        <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-usa-flag.png" alt="" class="hero-flag">
+    </section>
 
-        <!-- About Section -->
-        <section class="about-section">
-            <div class="container">
-                <div class="row align-middle">
-                    <div class="col-6">
-                        <div class="img-wrapper">
-                            <img src="images/best-appliance-repair.svg" alt="Best Appliance Repair">
-                            <img src="images/image-decor.svg" alt="" class="img-decor">
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="about-content">
-                            <h2>Appliance Repairs Done Right</h2>
-                            <p>An appliance is meant to make your life easier. When one of them breaks down, you don't just lose out on its utility, you're burdened with the inconvenience of having to fix it.</p>
-                            <p>Make your life easy.</p>
-                            <p>Just call <strong>Appliance Repair Group</strong>. We're a team of dedicated professionals with years of experience and we've seen it all. From <a href="oven-repair">repairing your oven</a> to <a href="refrigerator-repair">same-day fridge repair</a>, we provide prompt service for all major appliances to ensure that your home is running optimally. We also offer repairs for a range of brands such as <a href="miele-appliance-repair">Miele refrigerator repair services</a> and <a href="wolf-appliance-repair">repairs for Wolf appliances</a>. We're proud to serve our valued customers in Brooklyn, Queens, and Manhattan.</p>
-                            <p><strong>Why choose us?</strong></p>
-                            <ul class="bullet-list">
-                                <li>Our team is made up of certified technicians. We can diagnose your issue accurately, and fix it right the first time.</li>
-                                <li>We're consummate professionals who value the customer experience. That means you can expect prompt, courteous service, and to be completely satisfied with your results.</li>
-                            </ul>
-                            <div class="button-group">
-                                <a href="about" class="button primary">More About Us</a>
-                                <a href="service-areas" class="button is-outline">View Our Service Areas</a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Trust Badges -->
+    <section class="trust-badges">
+        <div class="container">
+            <div class="badges-grid">
+                <div class="badge-item">
+                    <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-google.png" alt="Google Reviews">
+                </div>
+                <div class="badge-item">
+                    <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-yelp.png" alt="Yelp Reviews">
+                </div>
+                <div class="badge-item">
+                    <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-trust-pilot.png" alt="Trustpilot Reviews">
+                </div>
+                <div class="badge-item">
+                    <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-facebook.png" alt="Facebook Reviews">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Services Section -->
-        <section class="services-section">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2>Appliances We Repair</h2>
-                    <p>If it's in your home and it's broken, we can fix it.</p>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://appliance-repair-group.com/wp-content/uploads/2024/05/best-appliance-repair.jpg" alt="Best Appliance Repair">
+                    <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-image-decor.svg" alt="" class="image-decor">
                 </div>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <a href="washer-repair">
-                            <div class="image-wrapper">
-                                <img src="images/services/washer-repair.svg" alt="Washer Repair">
-                            </div>
-                            <div class="card-text">
-                                <p>Washer Repair</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="service-card">
-                        <a href="dishwasher-repair">
-                            <div class="image-wrapper">
-                                <img src="images/services/dishwasher-repair.svg" alt="Dishwasher Repair">
-                            </div>
-                            <div class="card-text">
-                                <p>Dishwasher Repair</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="service-card">
-                        <a href="dryer-repair">
-                            <div class="image-wrapper">
-                                <img src="images/services/dryer-repair.svg" alt="Dryer Repair">
-                            </div>
-                            <div class="card-text">
-                                <p>Dryer Repair</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="service-card">
-                        <a href="refrigerator-repair">
-                            <div class="image-wrapper">
-                                <img src="images/services/fridge-repair.svg" alt="Refrigerator Repair">
-                            </div>
-                            <div class="card-text">
-                                <p>Refrigerator Repair</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="service-card">
-                        <a href="stove-repair">
-                            <div class="image-wrapper">
-                                <img src="images/services/stove-repair.svg" alt="Stove Repair">
-                            </div>
-                            <div class="card-text">
-                                <p>Stove Repair</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="service-card">
-                        <a href="range-repair">
-                            <div class="image-wrapper">
-                                <img src="images/services/range-repair.svg" alt="Range Repair">
-                            </div>
-                            <div class="card-text">
-                                <p>Range Repair</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="service-card">
-                        <a href="oven-repair">
-                            <div class="image-wrapper">
-                                <img src="images/services/oven-repair.svg" alt="Oven Repair">
-                            </div>
-                            <div class="card-text">
-                                <p>Oven Repair</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="service-card">
-                        <a href="freezer-repair">
-                            <div class="image-wrapper">
-                                <img src="images/services/freezer-repair.svg" alt="Freezer Repair">
-                            </div>
-                            <div class="card-text">
-                                <p>Freezer Repair</p>
-                            </div>
-                        </a>
+                <div class="about-content">
+                    <h2>Appliance Repairs Done Right</h2>
+                    <p>An appliance is meant to make your life easier. When one of them breaks down, you don't just lose out on its utility, you're burdened with the inconvenience of having to fix it.</p>
+                    <p>Make your life easy.</p>
+                    <p>Just call <strong>Appliance Repair Group</strong>. We're a team of dedicated professionals with years of experience and we've seen it all. From repairing your oven to same-day fridge repair, we provide prompt service for all major appliances to ensure that your home is running optimally. We also offer repairs for a range of brands such as Miele refrigerator repair services and repairs for Wolf appliances. We're proud to serve our valued customers in Brooklyn, Queens, and Manhattan.</p>
+                    <p><strong style="color: var(--heading);">Why choose us?</strong></p>
+                    <ul>
+                        <li>Our team is made up of certified technicians. We can diagnose your issue accurately, and fix it right the first time.</li>
+                        <li>We're consummate professionals who value the customer experience. That means you can expect prompt, courteous service, and to be completely satisfied with your results.</li>
+                    </ul>
+                    <div class="btn-group">
+                        <a href="#about" class="btn btn-primary">More About Us</a>
+                        <a href="#services" class="btn btn-outline">View Our Service Areas</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- NYC Section -->
-        <section class="nyc-section">
-            <div class="container">
-                <div class="row align-middle">
-                    <div class="col-5">
-                        <h2>Your Go-To NYC Appliance Repair Specialists</h2>
-                        <p>If you live here, chances are, you're fairly busy. Don't let a broken appliance take up your valuable time. Contact us today and watch the problem disappear.</p>
-                        <p><strong>Service Area Coverage:</strong></p>
-                        <ul class="bullet-list">
-                            <li>Brooklyn</li>
-                            <li>Queens</li>
-                            <li>Manhattan</li>
-                        </ul>
-                        <div class="button-group">
-                            <a href="book-online" class="button primary">Book Now</a>
-                            <a href="service-areas" class="button is-outline">View Our Service Areas</a>
-                        </div>
-                    </div>
-                    <div class="col-7">
-                        <div class="img-wrapper">
-                            <img src="images/nyc-appliance-repair.svg" alt="NYC Appliance Repair Specialists">
-                            <img src="images/image-decor.svg" alt="" class="img-decor">
-                        </div>
-                    </div>
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Appliances We Repair</h2>
+                <p>If it's in your home and it's broken, we can fix it.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <a href="#services">
+                        <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-washer-repair.png" alt="Washer Repair">
+                        <h3>Washer Repair</h3>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="#services">
+                        <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-dishwasher-repair.png" alt="Dishwasher Repair">
+                        <h3>Dishwasher Repair</h3>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="#services">
+                        <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-dryer-repair.png" alt="Dryer Repair">
+                        <h3>Dryer Repair</h3>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="#services">
+                        <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-fridge-repair.png" alt="Refrigerator Repair">
+                        <h3>Refrigerator Repair</h3>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="#services">
+                        <img src="https://appliance-repair-group.com/wp-content/uploads/2024/05/stove-repair-new-york.jpg" alt="Stove Repair">
+                        <h3>Stove Repair</h3>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="#services">
+                        <img src="https://appliance-repair-group.com/wp-content/uploads/2024/05/range-repair-new-york.jpg" alt="Range Repair">
+                        <h3>Range Repair</h3>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="#services">
+                        <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-oven-repair.png" alt="Oven Repair">
+                        <h3>Oven Repair</h3>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="#services">
+                        <img src="https://appliance-repair-group.com/wp-content/uploads/2024/05/same-day-freezer-repair-queens.jpg" alt="Freezer Repair">
+                        <h3>Freezer Repair</h3>
+                    </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- CTA Banner -->
-        <section class="cta-banner">
-            <div class="container">
-                <div class="row align-middle">
-                    <div class="col-7">
-                        <div class="icon-box">
-                            <img src="images/icons/note-icon.svg" alt="" width="54">
-                            <h2>Fast fixes for Brooklyn, Queens, and Manhattan</h2>
+    <!-- NYC Section -->
+    <section class="nyc-section">
+        <div class="container">
+            <div class="nyc-grid">
+                <div class="nyc-content">
+                    <h2>Your Go-To NYC Appliance Repair Specialists</h2>
+                    <p>If you live here, chances are, you're fairly busy. Don't let a broken appliance take up your valuable time. Contact us today and watch the problem disappear.</p>
+                    <p><strong style="color: var(--heading);">Service Area Coverage:</strong></p>
+                    <ul>
+                        <li>Brooklyn</li>
+                        <li>Queens</li>
+                        <li>Manhattan</li>
+                    </ul>
+                    <div class="btn-group">
+                        <a href="#contact" class="btn btn-primary">Book Now</a>
+                        <a href="#services" class="btn btn-outline">View Our Service Areas</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://appliance-repair-group.com/wp-content/uploads/2024/05/nyc-appliance-repair-specialists.jpg" alt="NYC Appliance Repair Specialists">
+                    <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-image-decor.svg" alt="" class="image-decor">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-inner">
+                <div class="cta-content">
+                    <div class="cta-icon">
+                        <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-note-inscription-definition-pencil-document.svg" alt="">
+                    </div>
+                    <h2>Fast fixes for Brooklyn, Queens, and Manhattan</h2>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                    <a href="tel:6464535353" class="btn btn-white">(646) 453-5353</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands-section" id="brands">
+        <div class="container">
+            <div class="section-header">
+                <h2>Appliance Brands We Repair</h2>
+                <p>Our technicians are certified experts with all the brands listed below.</p>
+            </div>
+            <div class="brands-grid">
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/Bertazonni-1.jpg" alt="Bertazzoni"></a>
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/BlueStar.jpg" alt="BlueStar"></a>
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-bosch.png" alt="Bosch"></a>
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-electrolux.png" alt="Electrolux"></a>
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-frigidaire.png" alt="Frigidaire"></a>
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/Fisher-and-Paykel.jpg" alt="Fisher & Paykel"></a>
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/Gaggenau-1.jpg" alt="Gaggenau"></a>
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/GE.jpg" alt="GE"></a>
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-jenn-air.png" alt="Jenn-Air"></a>
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-kitchen-aid.png" alt="KitchenAid"></a>
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/Liebherr.jpg" alt="Liebherr"></a>
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/Maytag.jpg" alt="Maytag"></a>
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/Miele.jpg" alt="Miele"></a>
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/Sub-Zero.jpg" alt="Sub-Zero"></a>
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/Thermador.jpg" alt="Thermador"></a>
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/Viking.jpg" alt="Viking"></a>
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/Whirlpool.jpg" alt="Whirlpool"></a>
+                <a href="#brands" class="brand-item"><img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/Wolf.jpg" alt="Wolf"></a>
+            </div>
+            <div style="text-align: center;">
+                <a href="#brands" class="btn btn-primary">View All</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://lh3.googleusercontent.com/a/ACg8ocLDVUnWziSmS4ZJyqtGOp0xrKEU1kuxrp6VsG-BBj-sCOH6MQ=w64-h64-c-rp-mo-br100" alt="Anthony Morris">
+                        </div>
+                        <div class="review-info">
+                            <h4>Anthony Morris</h4>
+                            <span class="review-date">2024-05-03</span>
                         </div>
                     </div>
-                    <div class="col-5">
-                        <div class="button-group">
-                            <a href="book-online" class="button primary">Book Now</a>
-                            <a href="tel:6464535353" class="button white">(646) 453-5353</a>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Excellent service, knowledgeable technician. Parts and repair same day.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUOG5g6dKZ4EzBrVxYVtWMLEwdeJ8iRaSCTCU6QJ7JrfsiYlqSYFg=w64-h64-c-rp-mo-br100" alt="Don Polistico">
+                        </div>
+                        <div class="review-info">
+                            <h4>Don Polistico</h4>
+                            <span class="review-date">2024-04-29</span>
                         </div>
                     </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Super helpful and knowledgeable of the situation with my stove. Was able to get it working again quickly and even fixed a few small other details to make it operate more smoothly.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://lh3.googleusercontent.com/a/ACg8ocKKl-yQaypkJ7Ntt6B5BcmpwnFNofJlrZsFnj7nb3G5pUxl0Q=w64-h64-c-rp-mo-br100" alt="Joe Espo">
+                        </div>
+                        <div class="review-info">
+                            <h4>Joe Espo</h4>
+                            <span class="review-date">2024-04-29</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Great service...very prompt!</p>
                 </div>
             </div>
-            <div class="cta-flag">
-                <img src="images/usa-flag-vertical.svg" alt="USA Flag">
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Brands Section -->
-        <section class="brands-section">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2>Appliance Brands We Repair</h2>
-                    <p>Our technicians are certified experts with all the brands listed below.</p>
-                </div>
-                <div class="brands-grid">
-                    <a href="bertazzoni-repair" class="brand-logo"><img src="images/brands/bertazzoni.svg" alt="Bertazzoni" height="65"></a>
-                    <a href="bluestar-appliance-repair" class="brand-logo"><img src="images/brands/bluestar.svg" alt="BlueStar" height="65"></a>
-                    <a href="bosch-appliance-repair" class="brand-logo"><img src="images/brands/bosch.svg" alt="Bosch" height="45"></a>
-                    <a href="electrolux-appliance-repair" class="brand-logo"><img src="images/brands/electrolux.svg" alt="Electrolux" height="45"></a>
-                    <a href="frigidaire-appliance-repair" class="brand-logo"><img src="images/brands/frigidaire.svg" alt="Frigidaire" height="45"></a>
-                    <a href="fisher-and-paykel-appliance-repair" class="brand-logo"><img src="images/brands/fisher-paykel.svg" alt="Fisher & Paykel" height="65"></a>
-                    <a href="gaggenau-appliance-repair" class="brand-logo"><img src="images/brands/gaggenau.svg" alt="Gaggenau" height="65"></a>
-                    <a href="ge-appliance-repair" class="brand-logo"><img src="images/brands/ge.svg" alt="GE" height="65"></a>
-                    <a href="jennair-appliance-repair" class="brand-logo"><img src="images/brands/jenn-air.svg" alt="Jenn-Air" height="45"></a>
-                    <a href="kitchenaid-appliance-repair" class="brand-logo"><img src="images/brands/kitchenaid.svg" alt="KitchenAid" height="46"></a>
-                    <a href="liebherr-appliance-repair" class="brand-logo"><img src="images/brands/liebherr.svg" alt="Liebherr" height="65"></a>
-                    <a href="maytag-appliance-repair" class="brand-logo"><img src="images/brands/maytag.svg" alt="Maytag" height="65"></a>
-                    <a href="miele-appliance-repair" class="brand-logo"><img src="images/brands/miele.svg" alt="Miele" height="65"></a>
-                    <a href="subzero-appliance-repair" class="brand-logo"><img src="images/brands/subzero.svg" alt="Sub-Zero" height="65"></a>
-                    <a href="thermador-appliance-repair" class="brand-logo"><img src="images/brands/thermador.svg" alt="Thermador" height="65"></a>
-                    <a href="viking-appliance-repair" class="brand-logo"><img src="images/brands/viking.svg" alt="Viking" height="65"></a>
-                    <a href="whirlpool-appliance-repair" class="brand-logo"><img src="images/brands/whirlpool.svg" alt="Whirlpool" height="65"></a>
-                    <a href="wolf-appliance-repair" class="brand-logo"><img src="images/brands/wolf.svg" alt="Wolf" height="65"></a>
-                </div>
-                <div class="text-center">
-                    <a href="brands-we-repair" class="button primary">View All</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Reviews Section -->
-        <section class="reviews-section">
-            <div class="container">
-                <div class="reviews-grid">
-                    <div class="review-card">
-                        <div class="review-header">
-                            <img src="images/reviews/avatar-1.svg" alt="Anthony Morris" class="review-avatar">
-                            <div class="review-info">
-                                <div class="review-name">Anthony Morris</div>
-                                <div class="review-date">May 3, 2024</div>
+    <!-- Contact Form Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-content">
+                    <h2>Get Your Appliances Fixed Today</h2>
+                    <p>Quick and convenient – fill out the form below for expert appliance repair in Brooklyn, Queens, and Manhattan.</p>
+                    <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Name*" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email*" required>
                             </div>
                         </div>
-                        <div class="review-stars">★★★★★</div>
-                        <p class="review-text">Excellent service, knowledgeable technician. Parts and repair same day.</p>
-                    </div>
-                    <div class="review-card">
-                        <div class="review-header">
-                            <img src="images/reviews/avatar-2.svg" alt="Don Polistico" class="review-avatar">
-                            <div class="review-info">
-                                <div class="review-name">Don Polistico</div>
-                                <div class="review-date">April 29, 2024</div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" name="phone" placeholder="Phone*" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="address" placeholder="Full Address*" required>
                             </div>
                         </div>
-                        <div class="review-stars">★★★★★</div>
-                        <p class="review-text">Super helpful and knowledgeable of the situation with my stove. Was able to get it working again quickly and even fixed a few small other details to make it operate more smoothly.</p>
-                    </div>
-                    <div class="review-card">
-                        <div class="review-header">
-                            <img src="images/reviews/avatar-3.svg" alt="Janet Lipinski" class="review-avatar">
-                            <div class="review-info">
-                                <div class="review-name">Janet Lipinski</div>
-                                <div class="review-date">April 18, 2024</div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <select name="service" required>
+                                    <option value="">Service Required</option>
+                                    <option value="Dishwasher Repair">Dishwasher Repair</option>
+                                    <option value="Washer Repair">Washer Repair</option>
+                                    <option value="Dryer Repair">Dryer Repair</option>
+                                    <option value="Stove Repair">Stove Repair</option>
+                                    <option value="Oven Repair">Oven Repair</option>
+                                    <option value="Fridge Repair">Fridge Repair</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="brand" placeholder="Brand*" required>
                             </div>
                         </div>
-                        <div class="review-stars">★★★★★</div>
-                        <p class="review-text">Fantastic company. They responded immediately and sent a great repairman out the very next morning. Fixed issues perfectly and price reasonable. 10/10 recommend!!!</p>
-                    </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" name="date" placeholder="Date*" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" name="time" placeholder="Time*" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Please write a message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="about-image">
+                    <img src="https://appliance-repair-group.com/wp-content/uploads/2024/05/convinient-appliance-repair.jpg" alt="Convenient Appliance Repair">
+                    <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-image-decor.svg" alt="" class="image-decor">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Form Section -->
-        <section class="contact-section">
+    <!-- Map Section -->
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.6996773295946!2d-73.96682922348671!3d40.59238404492896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2456247b33b9d%3A0x6a8c94068d00eee!2sAppliance%20Repair%20Group%20Inc.!5e0!3m2!1sen!2sca!4v1715263218473!5m2!1sen!2sca" allowfullscreen="" loading="lazy"></iframe>
+        <div class="map-cta">
             <div class="container">
-                <div class="row align-middle">
-                    <div class="col-6">
-                        <div class="img-wrapper">
-                            <img src="images/convenient-appliance-repair.svg" alt="Convenient Appliance Repair">
-                            <img src="images/image-decor.svg" alt="" class="img-decor">
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="contact-form">
-                            <h2>Get Your Appliances Fixed Today</h2>
-                            <p>Quick and convenient – fill out the form below for expert appliance repair in <a href="brooklyn-appliance-repair">Brooklyn</a>, <a href="queens-appliance-repair">Queens</a>, and <a href="manhattan-appliance-repair">Manhattan</a>.</p>
-                            <form action="#" method="post" id="contact-form">
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <input type="text" name="name" placeholder="Name*" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" name="email" placeholder="Email*" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="tel" name="phone" placeholder="Phone*" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="address" placeholder="Full Address*" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <select name="service" required>
-                                            <option value="">Service Required</option>
-                                            <option value="dishwasher">Dishwasher Repair</option>
-                                            <option value="washer">Washer Repair</option>
-                                            <option value="dryer">Dryer Repair</option>
-                                            <option value="stove">Stove Repair</option>
-                                            <option value="oven">Oven Repair</option>
-                                            <option value="fridge">Fridge Repair</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="brand" placeholder="Brand*" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="date" name="date" placeholder="Date*" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="time" name="time" placeholder="Time*" required>
-                                    </div>
-                                    <div class="form-group full-width">
-                                        <textarea name="message" placeholder="Please write a message" rows="4" required></textarea>
-                                    </div>
-                                    <div class="form-group full-width">
-                                        <button type="submit" class="button primary">Submit</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Map Section -->
-        <section class="map-section">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.6996773295946!2d-73.96682922348671!3d40.59238404492896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2456247b33b9d%3A0x6a8c94068d00eee!2sAppliance%20Repair%20Group%20Inc.!5e0!3m2!1sen!2sca!4v1715263218473!5m2!1sen!2sca" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="map-cta">
-                <div class="container">
+                <div class="map-cta-content">
                     <h2>Book Now for Hassle-Free Expert Repairs</h2>
                     <p>Schedule a repair service with Appliance Repair Group now and enjoy prompt, professional solutions to all your appliance issues.</p>
-                    <div class="button-group">
-                        <a href="book-online" class="button primary">Book Now</a>
-                        <a href="tel:6464535353" class="button white">Call Us: (646) 453-5353</a>
+                    <div class="btn-group">
+                        <a href="#contact" class="btn btn-primary">Book Now</a>
+                        <a href="tel:6464535353" class="btn btn-white">Call Us: (646) 453-5353</a>
                     </div>
                 </div>
-                <div class="map-flag">
-                    <img src="images/usa-flag-vertical.svg" alt="USA Flag">
-                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <a href="index" class="footer-logo">
-                        <img src="images/logo.svg" alt="Appliance Repair Group" height="65">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <a href="#home">
+                        <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-logo.svg" alt="Appliance Repair Group">
                     </a>
                 </div>
-                <div class="col-5">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="footer-menu">
-                                <ul>
-                                    <li><a href="refrigerator-repair">Refrigerator Repair</a></li>
-                                    <li><a href="dishwasher-repair">Dishwasher Repair</a></li>
-                                    <li><a href="washer-repair">Washer Repair</a></li>
-                                    <li><a href="oven-repair">Oven Repair</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="footer-menu">
-                                <ul>
-                                    <li><a href="dryer-repair">Dryer Repair</a></li>
-                                    <li><a href="range-repair">Range Repair</a></li>
-                                    <li><a href="freezer-repair">Freezer Repair</a></li>
-                                    <li><a href="stove-repair">Stove Repair</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                <div class="footer-nav-grid">
+                    <div class="footer-nav">
+                        <a href="#services">Refrigerator Repair</a>
+                        <a href="#services">Dishwasher Repair</a>
+                        <a href="#services">Washer Repair</a>
+                        <a href="#services">Oven Repair</a>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="footer-menu">
-                                <ul>
-                                    <li><a href="about">About Us</a></li>
-                                    <li><a href="service-areas">Service Areas</a></li>
-                                    <li><a href="warranty">Warranty</a></li>
-                                    <li><a href="gallery">Gallery</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="footer-menu">
-                                <ul>
-                                    <li><a href="contact-us">Contact Us</a></li>
-                                    <li><a href="brands-we-repair">Brands We Repair</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="footer-nav">
+                        <a href="#services">Dryer Repair</a>
+                        <a href="#services">Range Repair</a>
+                        <a href="#services">Freezer Repair</a>
+                        <a href="#services">Stove Repair</a>
+                    </div>
+                    <div class="footer-nav">
+                        <a href="#about">About Us</a>
+                        <a href="#services">Service Areas</a>
+                        <a href="#contact">Warranty</a>
+                        <a href="#reviews">Gallery</a>
+                    </div>
+                    <div class="footer-nav">
+                        <a href="#contact">Contact Us</a>
+                        <a href="#brands">Brands We Repair</a>
                     </div>
                 </div>
             </div>
@@ -575,90 +1601,183 @@
             
             <div class="footer-info">
                 <div class="footer-info-item">
-                    <div class="icon">
-                        <img src="images/icons/pin.svg" alt="Location">
+                    <div class="footer-info-icon">
+                        <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-pin.svg" alt="Location">
                     </div>
-                    <div>
-                        <div class="label">Head Office:</div>
-                        <div class="value">2617 Coney Island Avenue, 2nd Floor, Brooklyn, NY</div>
-                    </div>
-                </div>
-                <div class="footer-info-item">
-                    <div class="icon">
-                        <img src="images/icons/phone2.svg" alt="Phone">
-                    </div>
-                    <div>
-                        <div class="label">Call us 7 days a week:</div>
-                        <div class="value"><a href="tel:6464535353">(646) 453-5353</a></div>
+                    <div class="footer-info-text">
+                        <span>Head Office:</span>
+                        <strong>2617 Coney Island Avenue, 2nd Floor, Brooklyn, NY</strong>
                     </div>
                 </div>
                 <div class="footer-info-item">
-                    <div class="icon">
-                        <img src="images/icons/clock.svg" alt="Hours">
+                    <div class="footer-info-icon">
+                        <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-phone2.svg" alt="Phone">
                     </div>
-                    <div>
-                        <div class="label">Work time:</div>
-                        <div class="value">Mon-Sun: 7am - 10pm</div>
+                    <div class="footer-info-text">
+                        <span>Call us 7 days a week:</span>
+                        <strong><a href="tel:6464535353">(646) 453-5353</a></strong>
                     </div>
                 </div>
                 <div class="footer-info-item">
-                    <div class="icon">
-                        <img src="images/icons/tool.svg" alt="Service Area">
+                    <div class="footer-info-icon">
+                        <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-clock.svg" alt="Hours">
                     </div>
-                    <div>
-                        <div class="label">Service Area:</div>
-                        <div class="value">Brooklyn, Queens, Manhattan</div>
+                    <div class="footer-info-text">
+                        <span>Work time:</span>
+                        <strong>Mon-Sun: 7am - 10pm</strong>
+                    </div>
+                </div>
+                <div class="footer-info-item">
+                    <div class="footer-info-icon">
+                        <img src="https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-tool.svg" alt="Service Area">
+                    </div>
+                    <div class="footer-info-text">
+                        <span>Service Area:</span>
+                        <strong>Brooklyn, Queens, Manhattan</strong>
                     </div>
                 </div>
             </div>
         </div>
-        
         <div class="footer-bottom">
             <div class="container">
-                <p>Copyright © Appliance Repair Group 2025</p>
+                Copyright © Appliance Repair Group 2025
             </div>
         </div>
     </footer>
 
     <!-- Mobile Sticky Buttons -->
-    <div class="mobile-sticky-buttons">
-        <div class="row">
-            <div class="col">
-                <a href="contact-us" class="button primary">Book Now</a>
-            </div>
-            <div class="col">
-                <a href="tel:6464535353" class="button secondary">Call Us</a>
-            </div>
+    <div class="mobile-sticky">
+        <div class="mobile-sticky-grid">
+            <a href="#contact">Book Now</a>
+            <a href="tel:6464535353">Call Us</a>
         </div>
     </div>
 
     <!-- Back to Top -->
-    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobile-menu">
-        <button class="close-btn" aria-label="Close menu">×</button>
-        <ul>
-            <li><a href="refrigerator-repair">Refrigerator Repair</a></li>
-            <li><a href="oven-repair">Oven Repair</a></li>
-            <li><a href="stove-repair">Stove Repair</a></li>
-            <li><a href="dryer-repair">Dryer Repair</a></li>
-            <li><a href="washer-repair">Washer Repair</a></li>
-            <li><a href="dishwasher-repair">Dishwasher Repair</a></li>
-            <li><a href="index">Home</a></li>
-            <li><a href="about">About Us</a></li>
-            <li><a href="brands-we-repair">Brands We Repair</a></li>
-            <li><a href="service-areas">Service Areas</a></li>
-            <li><a href="gallery">Gallery</a></li>
-            <li><a href="warranty">Warranty</a></li>
-            <li><a href="contact-us">Contact</a></li>
-            <li><a href="tel:6464535353"><strong>(646) 453-5353</strong></a></li>
-            <li><a href="book-online" class="button primary">Book Now</a></li>
-        </ul>
-    </div>
-    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            document.getElementById('mobileMenu').classList.toggle('active');
+            document.getElementById('mobileOverlay').classList.toggle('active');
+            document.body.style.overflow = document.getElementById('mobileMenu').classList.contains('active') ? 'hidden' : '';
+        }
 
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
+        // Close mobile menu on link click
+        document.querySelectorAll('.mobile-menu-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                toggleMobileMenu();
+            });
+        });
+
+        // Sticky Header
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.15)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Back to Top Button
+        window.addEventListener('scroll', () => {
+            const backToTop = document.getElementById('backToTop');
+            if (window.pageYOffset > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Form Submission
+        function handleSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+            
+            // Validate required fields
+            let isValid = true;
+            form.querySelectorAll('[required]').forEach(field => {
+                if (!field.value.trim()) {
+                    field.style.borderColor = '#d80027';
+                    isValid = false;
+                } else {
+                    field.style.borderColor = '#ddd';
+                }
+            });
+            
+            // Email validation
+            const email = form.querySelector('[name="email"]');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email && !emailRegex.test(email.value)) {
+                email.style.borderColor = '#d80027';
+                isValid = false;
+            }
+            
+            // Phone validation
+            const phone = form.querySelector('[name="phone"]');
+            const phoneRegex = /^[\d\s\-\(\)\+]{10,}$/;
+            if (phone && !phoneRegex.test(phone.value)) {
+                phone.style.borderColor = '#d80027';
+                isValid = false;
+            }
+            
+            if (isValid) {
+                alert('Thank you for your submission! We will contact you shortly.');
+                form.reset();
+            }
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    const headerHeight = document.getElementById('header').offsetHeight;
+                    const targetPosition = target.offsetTop - headerHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .review-card, .brand-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
+
+
