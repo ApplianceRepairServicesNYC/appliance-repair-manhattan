@@ -1,0 +1,68 @@
+APPLIANCE REPAIR MANHATTAN - IMAGE DOWNLOAD LIST
+================================================
+Save each file to the "images" folder with the filename shown.
+
+SVG ICONS (10 files)
+--------------------
+usa-flag.svg        → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-usa-flag.svg
+phone.svg           → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-phone.svg
+logo.svg            → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-logo.svg
+image-decor.svg     → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-image-decor.svg
+cta-icon.svg        → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-note-inscription-definition-pencil-document.svg
+pin.svg             → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-pin.svg
+phone2.svg          → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-phone2.svg
+clock.svg           → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-clock.svg
+tool.svg            → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-tool.svg
+google-icon.svg     → https://cdn.trustindex.io/assets/platform/Google/icon.svg
+
+PNG IMAGES (17 files)
+---------------------
+stars.png           → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-stars.png
+usa-flag.png        → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-usa-flag.png
+favicon.png         → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-favicon.png
+google.png          → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-google.png
+yelp.png            → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-yelp.png
+trust-pilot.png     → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-trust-pilot.png
+facebook.png        → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-facebook.png
+bosch.png           → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-bosch.png
+electrolux.png      → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-electrolux.png
+frigidaire.png      → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-frigidaire.png
+jenn-air.png        → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-jenn-air.png
+kitchen-aid.png     → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-kitchen-aid.png
+washer-repair.png   → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-washer-repair.png
+dishwasher-repair.png → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-dishwasher-repair.png
+dryer-repair.png    → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-dryer-repair.png
+fridge-repair.png   → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-fridge-repair.png
+oven-repair.png     → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-oven-repair.png
+
+JPG IMAGES (21 files)
+---------------------
+hero-bg.jpg         → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-appliance-repair-man-in-overalls-repairs-a-refrigerator-focusing-on-its-inner-components-with-a-set-of-tools.jpg
+about-img.jpg       → https://appliance-repair-group.com/wp-content/uploads/2024/05/best-appliance-repair.jpg
+nyc-img.jpg         → https://appliance-repair-group.com/wp-content/uploads/2024/05/nyc-appliance-repair-specialists.jpg
+contact-img.jpg     → https://appliance-repair-group.com/wp-content/uploads/2024/05/convinient-appliance-repair.jpg
+map-cta-bg.jpg      → https://appliance-repair-group.com/wp-content/uploads/2024/03/appliance-repair-group-young-repairman-in-protective-workwear-fixing-oven.jpg
+stove-repair.jpg    → https://appliance-repair-group.com/wp-content/uploads/2024/05/stove-repair-new-york.jpg
+range-repair.jpg    → https://appliance-repair-group.com/wp-content/uploads/2024/05/range-repair-new-york.jpg
+freezer-repair.jpg  → https://appliance-repair-group.com/wp-content/uploads/2024/05/same-day-freezer-repair-queens.jpg
+bertazzoni.jpg      → https://appliance-repair-group.com/wp-content/uploads/2024/03/Bertazonni-1.jpg
+bluestar.jpg        → https://appliance-repair-group.com/wp-content/uploads/2024/03/BlueStar.jpg
+fisher-paykel.jpg   → https://appliance-repair-group.com/wp-content/uploads/2024/03/Fisher-and-Paykel.jpg
+gaggenau.jpg        → https://appliance-repair-group.com/wp-content/uploads/2024/03/Gaggenau-1.jpg
+ge.jpg              → https://appliance-repair-group.com/wp-content/uploads/2024/03/GE.jpg
+liebherr.jpg        → https://appliance-repair-group.com/wp-content/uploads/2024/03/Liebherr.jpg
+maytag.jpg          → https://appliance-repair-group.com/wp-content/uploads/2024/03/Maytag.jpg
+miele.jpg           → https://appliance-repair-group.com/wp-content/uploads/2024/03/Miele.jpg
+subzero.jpg         → https://appliance-repair-group.com/wp-content/uploads/2024/03/Sub-Zero.jpg
+thermador.jpg       → https://appliance-repair-group.com/wp-content/uploads/2024/03/Thermador.jpg
+viking.jpg          → https://appliance-repair-group.com/wp-content/uploads/2024/03/Viking.jpg
+whirlpool.jpg       → https://appliance-repair-group.com/wp-content/uploads/2024/03/Whirlpool.jpg
+wolf.jpg            → https://appliance-repair-group.com/wp-content/uploads/2024/03/Wolf.jpg
+
+REVIEW AVATARS (3 files)
+------------------------
+avatar1.jpg         → https://lh3.googleusercontent.com/a/ACg8ocLDVUnWziSmS4ZJyqtGOp0xrKEU1kuxrp6VsG-BBj-sCOH6MQ=w64-h64-c-rp-mo-br100
+avatar2.jpg         → https://lh3.googleusercontent.com/a-/ALV-UjUOG5g6dKZ4EzBrVxYVtWMLEwdeJ8iRaSCTCU6QJ7JrfsiYlqSYFg=w64-h64-c-rp-mo-br100
+avatar3.jpg         → https://lh3.googleusercontent.com/a/ACg8ocKKl-yQaypkJ7Ntt6B5BcmpwnFNofJlrZsFnj7nb3G5pUxl0Q=w64-h64-c-rp-mo-br100
+
+TOTAL: 51 images
